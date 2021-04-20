@@ -1,0 +1,29 @@
+@startuml
+
+[*] --> off : Car is started
+
+off: CC is off
+off --> on : "ON/OFF"
+off --> off : "SET/ACCEL"
+off --> off : "RES/COAST"
+off --> off : "CANCEL"
+
+on: CC is turned on but\nnot controlling vehicle;\nno previous speed
+on --> off : "ON/OFF"
+on --> active : "SET/ACCEL"
+on --> on : "RES/COAST"
+on --> on : "CANCEL"
+
+inactive: CC is turned on but\nnot controlling vehicle;\nhas previous speed
+inactive --> off : "ON/OFF"
+inactive --> active : "SET/ACCEL"
+inactive --> active : "RES/COAST"
+inactive --> inactive : "CANCEL"
+
+active: CC is controlling vehicle
+active --> off : "ON/OFF"
+active --> active : "SET/ACCEL"
+active --> active : "RES/COAST"
+active --> inactive : "CANCEL"
+
+@enduml

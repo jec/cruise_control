@@ -1,0 +1,80 @@
+<html>
+<head>
+    <style>
+        table {
+        }
+        td {
+            padding: 0.2em;
+        }
+        td.output {
+            font-style: italic;
+        }
+        tr.odd {
+            background-color: beige;
+        }
+    </style>
+</head>
+<body>
+<table>
+    <tr>
+        <th>&nbsp;</th>
+        <th>Off</th>
+        <th>On</th>
+        <th>Inactive</th>
+        <th>Active</th>
+    </tr>
+    <tr class="odd">
+        <th rowspan="2">ON/OFF</th>
+        <td class="output">none</td>
+        <td class="output">none</td>
+        <td class="output">none</td>
+        <td class="output">release vehicle</td>
+    </tr>
+    <tr class="odd">
+        <td class="next">&#10145; On</td>
+        <td class="next">&#10145; Off</td>
+        <td class="next">&#10145; Off</td>
+        <td class="next">&#10145; Off</td>
+    </tr>
+    <tr>
+        <th rowspan="2">SET/ACCEL</th>
+        <td class="output">none</td>
+        <td class="output">engage CC at current speed</td>
+        <td class="output">engage CC at current speed</td>
+        <td class="output">increase speed</td>
+    </tr>
+    <tr>
+        <td class="next">&#8617; Off</td>
+        <td class="next">&#10145; Active</td>
+        <td class="next">&#10145; Active</td>
+        <td class="next">&#8617; Active</td>
+    </tr>
+    <tr class="odd">
+        <th rowspan="2">RES/COAST</th>
+        <td class="output">none</td>
+        <td class="output">none</td>
+        <td class="output">engage CC at previous speed</td>
+        <td class="output">decrease speed</td>
+    </tr>
+    <tr class="odd">
+        <td class="next">&#8617; Off</td>
+        <td class="next">&#8617; On</td>
+        <td class="next">&#10145; Active</td>
+        <td class="next">&#8617; Active</td>
+    </tr>
+    <tr>
+        <th rowspan="2">CANCEL</th>
+        <td class="output">none</td>
+        <td class="output">none</td>
+        <td class="output">none</td>
+        <td class="output">release vehicle</td>
+    </tr>
+    <tr>
+        <td class="next">&#8617; Off</td>
+        <td class="next">&#8617; On</td>
+        <td class="next">&#8617; Inactive</td>
+        <td class="next">&#10145; Inactive</td>
+    </tr>
+</table>
+</body>
+</html>
