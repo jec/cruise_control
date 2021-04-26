@@ -33,7 +33,7 @@ transition, based on the current state. The _output_ is shown in italics. A
 transition to a new state is shown as ➡&nbsp;**Next**, and remaining in the
 current state is shown as ↩&nbsp;**Current**.
 
-Current State ><br/>Input v | Off | On | Inactive | Active
+Current State &#9758;<br/>Input &#9759; | Off | On | Inactive | Active
 ----------------------------|-----|----|----------|--------
 On/Off    | _none_<br/>➡ **On**  | _none_<br/>➡ **Off** | _none_<br/>➡ **Off** | _release vehicle_<br/>➡ **Off**
 Set/Accel | _none_<br/>↩ **Off** | _engage CC at current speed_<br/>➡ **Active** | _engage CC at current speed_<br/>➡ **Active** | _increase speed_<br/>↩ **Active**
