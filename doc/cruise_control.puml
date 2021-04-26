@@ -3,27 +3,27 @@
 [*] --> off : Car is started
 
 off: CC is off
-off --> on : "ON/OFF"
-off --> off : "SET/ACCEL"
-off --> off : "RES/COAST"
-off --> off : "CANCEL"
+off --> on : On/Off
+off --> off : Set/Accel
+off --> off : Res/Coast
+off --> off : Cancel
 
 on: CC is turned on but\nnot controlling vehicle;\nno previous speed
-on --> off : "ON/OFF"
-on --> active : "SET/ACCEL"
-on --> on : "RES/COAST"
-on --> on : "CANCEL"
+on --> off : On/Off
+on --> active : Set/Accel
+on --> on : Res/Coast
+on --> on : Cancel
 
 inactive: CC is turned on but\nnot controlling vehicle;\nhas previous speed
-inactive --> off : "ON/OFF"
-inactive --> active : "SET/ACCEL"
-inactive --> active : "RES/COAST"
-inactive --> inactive : "CANCEL"
+inactive --> off : On/Off
+inactive --> active : Set/Accel
+inactive --> active : Res/Coast
+inactive --> inactive : Cancel
 
 active: CC is controlling vehicle
-active --> off : "ON/OFF"
-active --> active : "SET/ACCEL"
-active --> active : "RES/COAST"
-active --> inactive : "CANCEL"
+active --> off : On/Off
+active --> active : Set/Accel
+active --> active : Res/Coast
+active --> inactive : Cancel
 
 @enduml
