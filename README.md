@@ -3,6 +3,9 @@
 This project was created as a demonstration of the concepts of a
 [finite state machine](https://en.wikipedia.org/wiki/Finite-state_machine).
 
+It uses the [state_machines](https://github.com/state-machines/state_machines)
+Rubygem to implement the finite state machine.
+
 ## Inputs
 
 The cruise control system represented here has four buttons:
@@ -23,7 +26,7 @@ The finite state machine has four states:
 * Active — CC is controlling vehicle
 * Inactive — CC is turned on but is not controlling vehicle; has previous speed
 
-## Actions and Transitions
+## Outputs and Transitions
 
 As a finite state machine, each input has a corresponding output and state
 transition, based on the current state. The _output_ is shown in italics. A
